@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAL - Ligne 1 de Lille sur Roblox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,8 +14,12 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-family: "Poppins", sans-serif;
             background: #000;
             color: #fff;
             overflow-x: hidden;
@@ -34,12 +41,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('images/background.png');
+            background-image: url('/images/background.png');
             background-size: cover;
             background-position: center;
             filter: blur(8px);
             transform: scale(1.1);
             z-index: 1;
+            will-change: transform;
         }
 
         .hero-overlay {
@@ -134,6 +142,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 10px 40px rgba(88, 101, 242, 0.3);
             color: white;
+            text-decoration: none;
         }
 
         .discord-button:hover {
@@ -149,6 +158,12 @@
             transform: translateX(-50%);
             z-index: 3;
             animation: bounce 2s infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-indicator:active {
+            transform: translateX(-50%) scale(0.9);
         }
 
         @keyframes bounce {
@@ -492,12 +507,12 @@
         
         <div class="hero-content">
             <div class="logo-container">
-                <img src="images/logo.png" alt="VAL Logo" class="logo-image">
+                <img src="/images/logo.png" alt="VAL Logo" class="logo-image">
             </div>
             
             <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
                 <a href="https://www.roblox.com/fr/games/130987437247802/" class="cta-button">Jouer Maintenant</a>
-                <a href="https://discord.gg/nQPQsXpTsf" class="discord-button" target="_blank" title="Rejoindre le Discord">
+                <a href="https://discord.gg/VOTRE_LIEN" class="discord-button" target="_blank" title="Rejoindre le Discord">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
                     </svg>
@@ -519,28 +534,28 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3 class="feature-title">Simulation Réaliste</h3>
+                    <h3 class="feature-title">→ Simulation réaliste</h3>
                     <p class="feature-text">
                         Reproduction du VAL 208 avec tous les systèmes de la Ligne 1 de Lille.
                     </p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">8 Stations (pour l'instant)</h3>
+                    <h3 class="feature-title">→ 8 Stations (pour l'instant)</h3>
                     <p class="feature-text">
                         Parcourez toute la Ligne 1, de Quatre Cantons à "Marberie"
                     </p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">Urbalis Fluence</h3>
+                    <h3 class="feature-title">→ Urbalis Fluence</h3>
                     <p class="feature-text">
                         Système de pilotage automatique.
                     </p>
                 </div>
 
                 <div class="feature-card">
-                    <h3 class="feature-title">Mis à jour</h3>
+                    <h3 class="feature-title">→ Mis à jour</h3>
                     <p class="feature-text">
                         Nouvelles fonctionnalités ajoutées régulièrement.
                     </p>
@@ -582,29 +597,57 @@
         <p style="font-size: 1.1rem; color: #fff; margin-bottom: 1rem;">
             <strong>VAL</strong> - Ligne 1 de Lille sur Roblox
         </p>
-        <p>&copy; 2025 • Simulation non officielle • Fan-made</p>
-        <p>Site crée par ❤️ par Edouard (itm0zlegends) • Jeu crée par Lye (Boccah38)</p>          
+        <p>&copy; 2025 • Simulation non officielle  Fan-made</p>
+        <p>Site crée par ❤️ par Edouard (itm0zlegends) • Jeu crée par Lye (Boccah38)</p>        
     </footer>
 
     <script>
-        document.querySelector('.scroll-indicator').addEventListener('click', () => {
-            document.querySelector('.content-section').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
+        document.querySelector('.scroll-indicator').addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector('.content-section');
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000;
+            let start = null;
+
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
         });
 
+        let ticking = false;
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBackground = document.querySelector('.hero-background');
-            if (heroBackground) {
-                heroBackground.style.transform = `scale(1.1) translateY(${scrolled * 0.5}px)`;
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const heroBackground = document.querySelector('.hero-background');
+                    if (heroBackground && scrolled < window.innerHeight) {
+                        heroBackground.style.transform = `scale(1.1) translateY(${scrolled * 0.5}px)`;
+                    }
+                    ticking = false;
+                });
+                ticking = true;
             }
         });
 
         const images = [
-            'images/galerie/image1.png',
-            'images/galerie/image2.png',
-            'images/galerie/image3.png'
+            '/images/galerie/image1.png',
+            '/images/galerie/image2.png',
+            '/images/galerie/image3.png'
         ];
 
         let currentIndex = 0;
